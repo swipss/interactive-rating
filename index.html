@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
   
   <title>Frontend Mentor | Interactive rating component</title>
 
@@ -31,8 +32,18 @@
       <button type="button" class="number">4</button>
       <button type="button" class="number">5</button>
     </div>
-    <button type="submit">SUBMIT</button>
+    <button type="submit" id="submit">SUBMIT</button>
   </div>
+  <div class="thank-you-container">
+    <img src="/images/illustration-thank-you.svg" alt="thank-you" class="thank-you">
+    <div class="selected-rating">
+      <p>You selected <span id="rating"></span> out of 5</p>
+    </div>
+    <h2>Thank you!</h2>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support,
+    don’t hesitate to get in touch!</p>
+  </div>
+  
   <!-- Rating state start -->
 
   <!-- How did we do?
