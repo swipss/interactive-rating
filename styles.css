@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+
+
+body {
+    background: var(--very-dark-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    background: linear-gradient(200deg  , var(--dark-blue), var(--very-dark-blue) 95%);
+    width: 400px;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+img {
+    background: var(--dark-blue);
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--white);
+    letter-spacing: .1rem;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+p {
+    color: var(--light-grey);
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.numbers-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.number {
+    color: var(--light-grey);
+    padding: 15px 20px;
+    background: var(--dark-blue);
+    border-radius: 100px;
+    border: none;
+    font-weight: 700;
+    transition: all .3s ease;
+    
+}
+
+.number:hover {
+    background: var(--orange);
+    color: var(--white);
+}
+
+.number:focus {
+    background: var(--light-grey);
+    color: white
+}
+
+
+
+button[type="submit"] {
+    width: 100%;
+    background: var(--orange);
+    border: none;
+    color: var(--white);
+    padding: 12px 0px;
+    border-radius: 20px;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    transition: all .3s ease;
+}
+
+button[type="submit"]:hover {
+    background: var(--white);
+    color: var(--orange)
+}
+
